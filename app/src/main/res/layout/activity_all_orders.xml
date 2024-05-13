@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C2710"
+    tools:context=".AllOrdersActivity">
+
+    <ImageView
+        android:id="@+id/OrderHistoryImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/orderhistoryimage" />
+
+    <Spinner
+        android:id="@+id/ordersSpinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="12dp"
+        android:background="#CEA878"
+        app:layout_constraintBottom_toTopOf="@+id/orderDetailsListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrderHistoryImageView" />
+
+    <ListView
+        android:id="@+id/orderDetailsListView"
+        android:layout_width="377dp"
+        android:layout_height="261dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="#CDA778"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordersSpinner" />
+
+    <TextView
+        android:id="@+id/TotalAmountTextView"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="143dp"
+        android:background="#CCA678"
+        android:text="@string/initial_total_amount"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderDetailsListView" />
+
+    <Button
+        android:id="@+id/cancelOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/cancel_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TotalAmountTextView"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

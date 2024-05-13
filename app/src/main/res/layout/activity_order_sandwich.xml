@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C2710"
+    tools:context=".OrderSandwichActivity">
+
+    <ImageView
+        android:id="@+id/SandwichImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sandwichimage" />
+
+    <Button
+        android:id="@+id/AddToOrderSandwichButton"
+        android:layout_width="125dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/add_to_order"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SubTotalSandwichTextView"
+        app:layout_constraintTop_toBottomOf="@+id/OnionsCheckBox"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/SubTotalSandwichTextView"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="16dp"
+        android:background="#6200ED"
+        android:text="@string/initial_total_amount"
+        android:textColor="#FEFEFE"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/AddToOrderSandwichButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TomatoesCheckBox"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <RadioGroup
+        android:id="@+id/breadChoiceRadioGroup"
+        android:layout_width="412dp"
+        android:layout_height="79dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meatChoiceRadioGroup">
+
+        <RadioButton
+            android:id="@+id/WheatToastRadioButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="39dp"
+            android:background="#AB8A6C"
+            android:text="@string/wheat_toast"
+            app:layout_constraintEnd_toStartOf="@+id/SourDoughRadioButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BeefRadioButton" />
+
+        <RadioButton
+            android:id="@+id/BagelRadioButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="16dp"
+            android:background="#AB8A6C"
+            android:text="@string/bagel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FishRadioButton" />
+
+        <RadioButton
+            android:id="@+id/SourDoughRadioButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:background="#AB8A6C"
+            android:text="@string/sour_dough"
+            app:layout_constraintEnd_toStartOf="@+id/BagelRadioButton"
+            app:layout_constraintTop_toBottomOf="@+id/ChickenRadioButton" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/meatChoiceRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SandwichImageView">
+
+        <RadioButton
+            android:id="@+id/BeefRadioButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="39dp"
+            android:background="#AB8A6C"
+            android:text="@string/beef"
+            app:layout_constraintEnd_toStartOf="@+id/ChickenRadioButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SandwichImageView" />
+
+        <RadioButton
+            android:id="@+id/ChickenRadioButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="40dp"
+            android:background="#AB8A6C"
+            android:text="@string/chicken"
+            app:layout_constraintEnd_toStartOf="@+id/FishRadioButton"
+            app:layout_constraintTop_toBottomOf="@+id/SandwichImageView" />
+
+        <RadioButton
+            android:id="@+id/FishRadioButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="#AB8A6C"
+            android:text="@string/fish"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SandwichImageView" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/CheeseCheckBox"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:background="#AB8A6C"
+        android:text="@string/cheese"
+        app:layout_constraintEnd_toStartOf="@+id/LettuceCheckBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breadChoiceRadioGroup" />
+
+    <CheckBox
+        android:id="@+id/LettuceCheckBox"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="92dp"
+        android:background="#AB8A6C"
+        android:text="@string/lettuce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breadChoiceRadioGroup" />
+
+    <CheckBox
+        android:id="@+id/TomatoesCheckBox"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:background="#AB8A6C"
+        android:text="@string/tomatoes"
+        app:layout_constraintEnd_toStartOf="@+id/OnionsCheckBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CheeseCheckBox" />
+
+    <CheckBox
+        android:id="@+id/OnionsCheckBox"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="92dp"
+        android:background="#AB8A6C"
+        android:text="@string/onions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LettuceCheckBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

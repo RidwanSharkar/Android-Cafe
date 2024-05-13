@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">RU Cafe</string>
+    <string name="display_integer">Display the Integer</string>
+    <string name="display_string">Display the String</string>
+    <string name="rutgers_website">Go to Rutgers website</string>
+    <string name="linearlayout">Demo LinearLayout</string>
+    <string name="initial_total_amount">$0.00</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="remove_selected_item">Remove Selected Item</string>
+    <string name="place_order">Place Order</string>
+    <string name="subtotal_label">Subtotal:</string>
+    <string name="tax_label">Tax:</string>
+    <string name="total_label">Total:</string>
+    <string name="french_vanilla">French Vanilla</string>
+    <string name="sweet_cream">Sweet Cream</string>
+    <string name="irish_cream">Irish Cream</string>
+    <string name="caramel">Caramel</string>
+    <string name="mocha">Mocha</string>
+    <string name="add_to_order">Add to Order</string>
+    <string name="sandwich_image_description">Sandwich Image</string>
+    <string name="wheat_toast">Wheat Toast</string>
+    <string name="bagel">Bagel</string>
+    <string name="sour_dough">Sour Dough</string>
+    <string name="beef">Beef</string>
+    <string name="chicken">Chicken</string>
+    <string name="fish">Fish</string>
+    <string name="cheese">Cheese</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="tomatoes">Tomatoes</string>
+    <string name="onions">Onions</string>
+    <string name="content_description_order_coffee">Order Coffee</string>
+    <string name="content_description_order_donut">Order Donut</string>
+    <string name="content_description_order_sandwich">Order Sandwich</string>
+    <string name="content_description_current_order">Current Order</string>
+    <string name="content_description_all_orders">All Orders</string>
+    <string name="content_description_icon">App Icon</string>
+
+    <string-array name="cup_sizes">
+        <item>Short</item>
+        <item>Tall</item>
+        <item>Grande</item>
+        <item>Venti</item>
+    </string-array>
+
+    <string-array name="quantities">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="itemNames">
+        <item>Strawberry Yeast</item>
+        <item>Glazed Yeast</item>
+        <item>Caramel Yeast</item>
+        <item>Cinnamon Yeast</item>
+        <item>Coconut Yeast</item>
+        <item>Mint Yeast</item>
+        <item>Mocha Cake</item>
+        <item>Chai Cake</item>
+        <item>Matcha Cake</item>
+        <item>Powdered Donut Hole</item>
+        <item>Blueberry Donut Hole</item>
+        <item>Lemon Donut Hole</item>
+    </string-array>
+
+    <string-array name="donut_types">
+        <item>Yeast</item>
+        <item>Cake</item>
+        <item>Donut Hole</item>
+    </string-array>
+
+</resources>

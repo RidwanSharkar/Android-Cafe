@@ -7,4 +7,8 @@ The Android Café app is intended to be a template for any Café, which may offe
 Employs object-oriented design principles (OOP) as well as model, view, and controller components (MVC Design Pattern). The Model encompasses the business logic and data structures. These menu items can be further subcategorized using Inheritence and Polymorphism for consistency across varieties. The Views consist of JavaFX for the graphical user interface and FXML for defining the layouts, while the Controller consists of activity classes that manage user interactions and application logic (onClick & event handlers).
 
 
-Usage: To use the app, simply download and install it on any compatible Android device
+Usage: 
+
+To use the app, simply download and install it on any compatible Android device:
+Pixel 2 API 28
+Android 9.0 | x86
